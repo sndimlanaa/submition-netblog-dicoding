@@ -1,0 +1,516 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+    
+    margin: 0;
+    height: auto;
+
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: #005C78;
+}
+
+header.navbar-container {
+    position: fixed;
+    background-color: transparent;
+    width: 100%;
+    padding-block: 1rem;
+    margin-inline: auto;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 9999;
+}
+
+header.navbar-container .logo {
+    align-items: center;
+    gap: .5rem;
+    display: flex;
+}
+
+header.navbar-container .logo p{ 
+    color: white;
+    font-weight: 500;
+}
+
+header.navbar-container .logo p.scrolled-icon{ 
+    color: #E88D67;
+    font-weight: 500;
+}
+
+.custom-icon {
+    color: white;
+    font-size: 1.5rem;
+}
+.custom-icon-head{
+    color: white;
+    font-size: 18rem;
+}
+
+.custom-icon.scrolled-icon {
+    color: #E88D67;
+}
+
+header.navbar-container .nav-list ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li {
+    list-style-type: none;
+}
+
+header.navbar-container .nav-list li a {
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    font-size: 1.05rem;
+    transition: all 0.1s ease-in-out;
+    color: #F3F7EC;
+    font-weight: bold;
+}
+
+header.navbar-container .nav-list li a.scrolled-a {
+    color: #E88D67;
+}
+
+
+header.navbar-container .nav-list li a:hover {
+    color: #bbbbbb;
+}
+
+header.navbar-container .nav-list li a.scrolled-a:hover {
+    color: #94401c;
+}
+
+main .head-container {
+    display: flex;
+    flex: .35;
+    width: 100%;
+    max-width: 1200px;
+    background-color: #005C78;
+    margin-inline: auto;
+    padding-block: 5rem;
+    padding-inline: 2rem;
+}
+
+main .head-container .head-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    
+}
+
+main .head-container .head-content .head-logo{
+    flex: 1;
+    display: flex;
+}
+
+main .head-container .head-content .head-desc{
+    color: #F3F7EC;
+    flex: 1.4;
+}
+
+main .head-container .head-content .head-desc h1 {
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+main .head-container .head-content .head-desc .button {
+    padding: 0.8rem 2.5rem;
+    border: 3px solid transparent;
+    border-radius: 12px;
+
+    margin-block-start: 1rem;
+    background-color: #E88D67;
+
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    transition: all 0.15s ease-in;
+}
+
+main .head-container .head-content .head-desc .button:hover {
+    background-color: #ff6f31;
+}
+
+main .main-container {
+    background-color: white;
+    width: 100%;
+    flex: 2;
+    display: flex;
+    gap: .5rem;
+}
+
+main .article-container {
+    background-color: white;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-flow: row;
+    margin-inline: auto;
+}
+
+main .article-container .content-container {
+    flex: 1;
+    margin-block: 2.5rem;
+    display: flex;
+    flex-flow: column;
+    padding-inline: 2rem;
+}
+
+main .article-container .content-container .blog-link p{
+    font-size: 1rem;
+    color: gray;
+}
+
+main .article-container .content-container .upload-info{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    color: gray;
+}
+
+main .article-container .content-container img{
+    width: auto;
+    max-height: 50vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+main .article-container .content-container h1{
+    font-size: 3rem;
+    font-weight: 600;
+    margin-block-end: 0;
+}
+
+main .article-container .content-container ul li{
+    padding-block: .25rem;
+    list-style-type: circle;
+}
+
+main .article-container .content-container ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+main .article-container .content-container .title-content{
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+}
+
+main .article-container .content-container .title-content h2{
+    font-size: 2rem;
+}
+
+main .article-container .content-container .title-content .fa-circle{
+    color: #006989;
+} 
+
+main .article-container .content-container h2{
+    color: rgb(29, 29, 29);
+} 
+
+main .article-container .content-container p{
+    font-size: 1.25rem;
+    line-height: 2rem;
+    color: rgb(65, 65, 65);
+} 
+
+main .article-container .content-container .uploader-info{
+    width: 100%;
+    border-radius: 8px;
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    flex-flow: column;
+    padding-inline: 3rem;
+} 
+
+main .article-container .content-container .uploader-info h4{
+    margin-block-end    : 0;
+} 
+main .article-container .content-container .uploader-info p{
+    margin-block-start: 0;
+} 
+
+main .article-container aside {
+    margin-block: 2.5rem;
+    flex: .35;
+    width: 100%;
+    max-height: 100vh;
+    display: flex;
+    flex-flow: column;
+    gap: .5rem;
+}
+
+main .article-container aside .aside-title-content{ 
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+main .article-container aside .aside-title-content h3 {
+    color: rgb(59, 59, 59);
+    font-size: 1.5em;
+    letter-spacing: .5rem;
+}
+
+main .article-container aside .aside-title-content .fa-star{ 
+    color: #ff6f31;
+    font-size: 1.25rem;
+}
+
+main .article-container aside article{ 
+    padding-inline: 2rem;
+    display: flex;
+    flex-flow: column;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    /* background-color: cyan; */
+}
+main .article-container aside article:hover{ 
+    background-color: rgb(248, 248, 248);
+    /* background-color: cyan; */
+}
+
+main .article-container aside article p{ 
+    text-transform:uppercase;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    margin-block: 0;
+    color: #006989;
+    padding-block-start: 1rem;
+}
+
+main .article-container aside .about-me-content{ 
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    background-color: rgb(250, 250, 250);
+    margin-inline: 2rem;
+    padding: 2rem;
+    align-items: center;
+}
+
+main .article-container aside .about-me-content img{ 
+    object-fit: cover;
+    border-radius: 50%;
+    width: 5rem;
+}
+
+main .article-container aside .about-me-content h5{ 
+    color: #ff6f31;
+    margin-block-end: 0;
+}
+    
+
+main .rec-container {
+    background-color: white;
+    padding-block-end: 2rem;
+    /* background-color: gray;  */
+    flex: .5;
+    width: 100%;
+    
+    min-height: 50vh;
+    margin-block-end: auto;
+    margin-inline: auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+main .rec-container .read-more-content{
+    width: 100%;
+    max-width: 1200px;
+    padding-inline: 2rem;
+    margin-block-end: 1.5rem;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+
+main .rec-container .read-more-content .line{
+    background-color: rgb(190, 190, 190);
+    width: 100%;
+    height: .1rem;
+    border-radius: 999px;
+}
+
+main .rec-container .read-more-content p{
+    color: gray;
+    padding-inline: 2rem;
+}
+
+main .rec-container .rec-content {
+    width: 100%;
+    max-width: 1200px;
+    padding-inline: 2rem;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center ;
+}
+
+main .rec-container .rec-content .rec-card{
+    flex: 1;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    display: flex;
+    flex-flow: column;
+    transition: all 0.5 ease-in-out;
+    cursor: pointer;
+}
+
+main .rec-container .rec-content .rec-card:hover{
+    transform: translate(0, -.5rem);
+}
+
+main .rec-container .rec-content .rec-card img{
+    width: 100%;
+    max-height: 20vh;
+    flex: 1;
+    object-fit: cover;
+}
+
+main .rec-container .rec-content .rec-card .rec-card-content{
+    flex: 1;
+    padding: 1rem;
+    
+}
+
+footer {
+    background-color: #ff6f31;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.scrolled {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+
+@media screen and (max-width: 768px) {
+    header.navbar-container {   
+        flex-direction: column;
+    }
+    header.navbar-container .nav-list ul {
+        flex-wrap: wrap;
+        column-gap: 0.5rem;
+    }
+    main .rec-container .rec-content{
+        flex-flow: column   ;
+    }
+    
+    main .article-container {
+        flex-flow: column;
+    }
+
+    main .article-container aside {
+        padding-inline: 2rem;
+    }
+    
+
+    main .head-container .head-content .head-desc {
+        padding-block-start: 4rem;
+    }
+    main .head-container .head-content .head-desc h1 {
+        font-weight: 800;
+        font-size: 1rem;
+    }
+
+    main .head-container .head-content .head-desc .button {
+        padding: 0.4rem 1.25rem;
+        font-size: .5rem;
+        font-weight: 700;
+    }
+
+    main .article-container .content-container h1 {
+        
+        font-size: 2rem;
+    }
+
+    main .article-container .content-container .upload-info i,
+    main .article-container .content-container .upload-info p {
+        
+        font-size: .75rem;
+    }
+    main .article-container .content-container > p
+    {
+        
+        font-size: 1rem;
+    }
+
+    main .article-container .content-container h3,
+    main .article-container .content-container ul li > a
+    {
+        
+        font-size: .8rem;
+    }
+
+    
+
+    main .article-container .content-container .blog-link > p{
+        font-size: .75rem;
+    }
+
+    main .article-container .content-container article .title-content h2,
+    main .article-container .content-container article .title-content i{
+        font-size: 1rem;
+    }
+    main .article-container .content-container article p{
+        font-size: .7rem;
+    }
+
+    main .article-container .content-container .uploader-info h4,
+    main .article-container .content-container .uploader-info p{
+        font-size: .7rem;
+    }
+
+    main .content .content-description p {
+        font-size: 1rem;
+    }
+
+    main .content .content-image {
+        order:-1;
+    }
+
+    footer {
+        padding-inline: 1rem;
+    }
+
+    footer p{
+        text-align: center;
+    }
+}
+

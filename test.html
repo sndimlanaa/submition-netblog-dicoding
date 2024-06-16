@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scroll Button</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  .content {
+    height: 1500px; /* Contoh konten panjang */
+    padding: 20px;
+  }
+
+  button#scrollBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 16px;
+    padding: 10px;
+    background-color: #555;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  button#scrollBtn:hover {
+    background-color: #333;
+  }
+</style>
+</head>
+<body>
+
+<div class="content">
+  <p>Scroll down to see the button appear...</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id feugiat augue, nec fringilla turpis. Sed sed risus ac lorem bibendum ultricies. Vestibulum sit amet ullamcorper tortor, vel hendrerit odio. Integer feugiat arcu eget risus consectetur, sed sollicitudin libero vestibulum. Sed vitae volutpat purus. Donec vestibulum est ut metus faucibus, ut gravida nisl aliquet. Sed dapibus neque id leo egestas, vel convallis turpis fermentum. Praesent vel ligula nec neque ultrices efficitur.</p>
+  <!-- Tambahkan konten lain di sini -->
+</div>
+
+<button onclick="topFunction()" id="scrollBtn" title="Go to top">Top</button>
+
+<script>
+  // Saat pengguna menggulir lebih dari 20 piksel dari bagian atas dokumen, tampilkan tombol
+  window.onscroll = function() {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("scrollBtn").style.display = "block";
+    } else {
+      document.getElementById("scrollBtn").style.display = "none";
+    }
+  }
+
+  // Saat tombol di klik, scroll kembali ke bagian atas dokumen
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+
+</body>
+</html>
