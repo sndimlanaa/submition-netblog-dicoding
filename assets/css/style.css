@@ -257,7 +257,7 @@ main .article-container aside {
     margin-block: 2.5rem;
     flex: .35;
     width: 100%;
-    max-height: 100vh;
+    
     display: flex;
     flex-flow: column;
     gap: .5rem;
